@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h2 align="center">Registration Form</h2>
+    <form action="./submit.html" method="post" enctype="text/plain">
+
+        <label for="fname">First Name:</label>
+        <input type="text" name="firstname" id="fname">
+        <br><br>
+
+        <label for="lname">Last Name:</label>
+        <input type="text" name="lastname" id="lname">
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="Email" id="email">
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" name="Password" id="password">
+        <br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="Gender" value="Male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="Gender" value="Female">
+        <label for="female">Female</label>
+        <br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" name="Age" id="age">
+        <br><br>
+
+        <h3>Preferences:</h3>
+        <input type="checkbox" id="cyclic" name="pref" value="Cyclic Painting">
+        <label for="cyclic">Cyclic Painting</label><br>
+
+        <input type="checkbox" id="acyclic" name="pref" value="Acyclic Painting">
+        <label for="acyclic">Acyclic Painting</label><br>
+
+        <input type="checkbox" id="watercolor" name="pref" value="Water Color Painting">
+        <label for="watercolor">Water Color Painting</label><br><br>
+
+        <label for="occupation">Occupation:</label>
+        <select name="occupation" id="occupation">
+            <option value="Student">Student</option>
+            <option value="B.Tech">B.Tech</option>
+            <option value="MCA">MCA</option>
+        </select>
+        <br><br>
+
+        <label for="bio">Bio:</label><br>
+        <textarea id="bio" name="Bio" rows="3" cols="30"></textarea>
+        <br><br>
+
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

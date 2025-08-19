@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Application Form</title>
+</head>
+<body>
+  <h2 align="center">Application Form</h2>
+
+  <form action="./submit.html" method="post" enctype="text/plain">
+
+    <span>
+      <label for="fname">First Name:</label>&nbsp;&nbsp;&nbsp;
+      <input type="text" name="firstname" id="fname" />
+    </span>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span>
+      <label for="lname">Last Name:</label>&nbsp;&nbsp;&nbsp;
+      <input type="text" name="lastname" id="lname" />
+    </span>
+    <br><br>
+
+    <span>
+      <label for="dob">Date of Birth:</label>&nbsp;&nbsp;&nbsp;
+      <input type="date" id="dob" name="dob" required />
+    </span>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span>
+      <label for="age">Age:</label>&nbsp;&nbsp;&nbsp;
+      <input type="number" name="age" id="age" />
+    </span>
+    <br><br>
+
+    <span>
+      <label>Gender:</label>&nbsp;&nbsp;&nbsp;
+      <input type="radio" id="male" name="gender" value="Male" />
+      <label for="male">Male</label>
+      &nbsp;&nbsp;
+      <input type="radio" id="female" name="gender" value="Female" />
+      <label for="female">Female</label>
+    </span>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span>
+      <label for="email">Email Address:</label>&nbsp;&nbsp;&nbsp;
+      <input type="email" name="email" id="email" />
+    </span>
+    <br><br>
+
+    <span>
+      <label>Positions Available:</label>&nbsp;&nbsp;&nbsp;
+      <input type="radio" id="junior" name="position" value="Junior Developer" />
+      <label for="junior">Junior Developer</label>
+      &nbsp;&nbsp;
+      <input type="radio" id="mid" name="position" value="Mid-Level Developer" />
+      <label for="mid">Mid-level Developer</label>
+      &nbsp;&nbsp;
+      <input type="radio" id="senior" name="position" value="Senior Developer" />
+      <label for="senior">Senior Developer</label>
+    </span>
+    <br><br>
+
+    <span>
+      <label>Programming Languages:</label>&nbsp;&nbsp;&nbsp;
+      <input type="checkbox" id="java" name="languages" value="Java" />
+      <label for="java">Java</label>
+      &nbsp;&nbsp;
+      <input type="checkbox" id="javascript" name="languages" value="JavaScript" />
+      <label for="javascript">JavaScript</label>
+      &nbsp;&nbsp;
+      <input type="checkbox" id="python" name="languages" value="Python" />
+      <label for="python">Python</label>
+    </span>
+    <br><br>
+
+    <span>
+      <label for="password">Password:</label>&nbsp;&nbsp;&nbsp;
+      <input type="password" name="password" id="password" />
+    </span>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span>
+      <label for="confirm_password">Confirm Password:</label>&nbsp;&nbsp;&nbsp;
+      <input type="password" name="confirm_password" id="confirm_password" />
+    </span>
+    <br><br>
+
+    <div align="center">
+      <button type="submit">Submit</button>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <button type="reset">Reset</button>
+    </div>
+
+  </form>
+</body>
+</html>
