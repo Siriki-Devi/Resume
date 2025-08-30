@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio (Table Layout)</title>
+</head>
+<body>
+
+  <h1 style="text-align:center;">My Portfolio (Table Layout)</h1>
+
+  <table border="1" width="100%" cellspacing="0" cellpadding="5">
+    <!-- Header -->
+    <tr>
+      <td colspan="2" align="center">
+        <h2>Welcome to John Doe's Portfolio</h2>
+        <p><b>Email:</b> john@example.com | <b>Website:</b> example.com</p>
+      </td>
+    </tr>
+
+    <!-- About & Skills -->
+    <tr>
+      <td width="50%">
+        <h3>About Me</h3>
+        <p>Hello! I’m John Doe, a creative web developer with a passion for clean code and great UI.</p>
+        <p>I specialize in HTML, CSS, and JavaScript.</p>
+      </td>
+      <td width="50%">
+        <h3>Skills</h3>
+        <ul>
+          <li>HTML & CSS</li>
+          <li>JavaScript & React</li>
+          <li>Responsive Web Design</li>
+          <li>SEO Optimization</li>
+        </ul>
+      </td>
+    </tr>
+
+    <!-- Projects -->
+    <tr>
+      <td colspan="2" align="center">
+        <h3>Projects</h3>
+        <table border="1" width="100%" cellspacing="0" cellpadding="5">
+          <tr>
+            <th>Project</th>
+            <th>Description</th>
+            <th>Tools Used</th>
+          </tr>
+          <tr>
+            <td>Portfolio Website</td>
+            <td>A responsive personal portfolio site.</td>
+            <td>HTML, CSS, JS</td>
+          </tr>
+          <tr>
+            <td>Blog Platform</td>
+            <td>A full-featured blog with user login.</td>
+            <td>HTML, PHP, MySQL</td>
+          </tr>
+          <tr>
+            <td>E-commerce Page</td>
+            <td>A shopping cart with product filter.</td>
+            <td>HTML, CSS, JS</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" >
+        <h3>Testimonials</h3>
+        <p>"John’s work is outstanding and he delivers on time every time."</p>
+        <p>– Jane Smith, Happy Client</p>
+      </td>
+    </tr>
+    <tr>
+        <td colspan="2" >
+            <h3>Contact Me</h3>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="text" name="Email:" id="Email:">
+            <br><br>
+            <label for="message">Message:</label>
+            <textarea id="Message" name="Message" rows="3" cols="30" required></textarea>
+            <br><br>
+            <button>Send</button>
+            <button>Resubmit</button>
+        </td>
+     </tr>
+     <tr>
+      <td colspan="2" align="center">
+        <p>© 2025 John Doe | Built using pure HTML and tables</p>
+        <p>Last updated: August 13, 2025</p>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
