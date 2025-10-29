@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Centered Animals Gallery</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    background: white;
+    border: 2px solid black;
+    padding: 30px 50px;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 300px;
+  }
+
+  .item {
+    margin: 20px 0;
+  }
+
+  .item label {
+    font-size: 24px;
+    cursor: pointer;
+    user-select: none;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #333;
+    border-radius: 6px;
+    background-color: #e0e0e0;
+    transition: background-color 0.3s;
+  }
+
+  .item label:hover {
+    background-color: #c0d6f9;
+  }
+
+  .item img {
+    width: 250px;
+    margin-top: 15px;
+    border: 2px solid #333;
+    border-radius: 6px;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+  }
+
+  .item input:checked + label + img {
+    display: block;
+    opacity: 1;
+  }
+
+  /* Hide default checkbox */
+  .item input[type=checkbox] {
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="item">
+    <input type="checkbox" id="tiger" />
+    <label for="tiger">Tiger</label>
+    <img src="tiger.jpg" alt="Tiger" />
+  </div>
+
+  <div class="item">
+    <input type="checkbox" id="fox" />
+    <label for="fox">Fox</label>
+    <img src="Red-Fox.jpg" alt="Fox" />
+  </div>
+
+  <div class="item">
+    <input type="checkbox" id="panda" />
+    <label for="panda">Panda</label>
+    <img src="Panda.jpg" alt="Panda" />
+  </div>
+
+  <div class="item">
+    <input type="checkbox" id="monkey" />
+    <label for="monkey">Monkey</label>
+    <img src="Monkey.jpg" alt="Monkey" />
+  </div>
+
+  <div class="item">
+    <input type="checkbox" id="otter" />
+    <label for="otter">Otter</label>
+    <img src="Otter.jpg" alt="Otter" />
+  </div>
+
+  <div class="item">
+    <input type="checkbox" id="elephant" />
+    <label for="elephant">Elephant</label>
+    <img src="elephant.jpg" alt="Elephant" />
+  </div>
+
+  <div class="item">
+    <input type="checkbox" id="deer" />
+    <label for="deer">Deer</label>
+    <img src="deer.jpg" alt="Deer" />
+  </div>
+
+  <div class="item">
+    <input type="checkbox" id="lion" />
+    <label for="lion">Lion</label>
+    <img src="lion.jpg" alt="Lion" />
+  </div>
+</div>
+
+</body>
+</html>
