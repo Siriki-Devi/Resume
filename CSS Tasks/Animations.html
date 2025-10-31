@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Four Packets Hover Effect</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f8f8f8;
+    }
+
+    .container {
+      display: flex;
+      gap: 50px;
+    }
+
+    .item {
+      width: 200px;
+      height: 200px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    
+    .item img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: all 0.8s ease;
+    }
+
+   
+    .packet {
+      opacity: 0;
+      /* z-index: 1; */
+      transform: scale(1.1);
+    }
+
+   
+    .inside {
+      opacity: 1;
+      /* z-index: 2; */
+      transform: scale(1);
+    }
+
+    
+    .item:hover .packet {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .item:hover .inside {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="item">
+      <img class="packet" src="https://www.infermentum.it/_upload/_middle/1610459263.81_La-Torta-di-Rose.webp" alt="Packet 1">
+      <img class="inside" src="https://www.infermentum.it/_upload/_middle/1610457569.14_La-Torta-di-Rose.png" alt="Inside 1">
+    </div>
+
+    <div class="item">
+      <img class="packet" src="https://www.infermentum.it/_upload/_middle/1617285339.82_Il_Dolce_Monte_Nuvola-(600x600).png" alt="Packet 2">
+      <img class="inside" src="https://www.infermentum.it/_upload/_middle/1634542953.89_Il-Dolce-Monte-Nuvola.png" alt="Inside 2">
+    </div>
+
+    <div class="item">
+      <img class="packet" src="inside.jpg" alt="Packet 3">
+      <img class="inside" src="packet.jpg" alt="Inside 3">
+    </div>
+
+    <div class="item">
+      <img class="packet" src="https://www.infermentum.it/_upload/_middle/1666691507.52_Il_Panettone_Tradizionale-(600x600).png" alt="Packet 4">
+      <img class="inside" src="https://www.infermentum.it/_upload/_middle/1610451924.99_Il-Panettone-Tradizionale.png" alt="Inside 4">
+    </div>
+  </div>
+
+</body>
+</html>
